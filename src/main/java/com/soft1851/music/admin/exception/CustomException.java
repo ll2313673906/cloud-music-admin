@@ -5,7 +5,7 @@ import com.soft1851.music.admin.common.ResultCode;
 /**
  * @ClassName CustomException
  * @Description 用户自定义异常
- * @Author mq_xu
+ *@Author fwt
  * @Date 2020/4/21
  * @Version 1.0
  */

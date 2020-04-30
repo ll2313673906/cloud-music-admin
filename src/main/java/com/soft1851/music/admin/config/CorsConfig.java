@@ -10,7 +10,13 @@ import org.springframework.web.filter.CorsFilter;
 import java.util.Arrays;
 import java.util.List;
 
-
+/**
+ * @ClassName CorsConfig
+ * @Description 跨域配置
+ * @Author @author fwt
+ * @Date 2020/4/15
+ * @Version 1.0
+ */
 @Configuration
 public class CorsConfig {
     @Bean
@@ -25,7 +31,7 @@ public class CorsConfig {
         List<String> allowedRequestMethods = Arrays.asList(requestMethods);
         config.setAllowedMethods(allowedRequestMethods);
         //允许的客户端请求头列表
-        String[] requestHeaders = {"x-requested-with", "Content-Type", "Authorization"};
+        String[] requestHeaders = {"x-requested-with", "Content-Type", "Authorization","id"};
         List<String> allowedHeaders = Arrays.asList(requestHeaders);
         config.setAllowedHeaders(allowedHeaders);
         //允许的响应头列表

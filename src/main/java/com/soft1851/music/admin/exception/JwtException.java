@@ -6,7 +6,7 @@ import com.soft1851.music.admin.common.ResultCode;
 /**
  * @ClassName JwtException
  * @Description 自定义异常
- * @Author mq_xu
+ *@Author fwt
  * @Date 2020/4/15
  * @Version 1.0
  */

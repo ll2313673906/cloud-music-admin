@@ -5,7 +5,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @author mq_xu
+ * @author fwt
  * @ClassName  ResponseResult
  * @description 返回的JSON数据结构标准
  * @create 2020/2/5

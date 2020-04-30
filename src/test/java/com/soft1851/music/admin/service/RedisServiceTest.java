@@ -7,17 +7,19 @@ import javax.annotation.Resource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * @Author F*WT
- * @Date 2020/4/21 13:21
- * @Description
- */
 @SpringBootTest
 class RedisServiceTest {
-@Resource
-private RedisService redisService;
-    @Test
-    void testRedis() {
+    @Resource
+    private RedisService redisService;
 
+    @Test
+    void testSet() {
+        //redis配置中设置的过期时间单位是分钟
+        redisService.set("test", "123", 1L);
+    }
+
+    @Test
+    void testExistsKey() {
+        System.out.println(redisService.existsKey("test"));
     }
 }

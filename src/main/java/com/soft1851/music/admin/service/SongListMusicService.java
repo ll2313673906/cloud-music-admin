@@ -1,15 +1,15 @@
 package com.soft1851.music.admin.service;
 
-import com.soft1851.music.admin.entity.SongListMusic;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.soft1851.music.admin.domain.entity.SongListMusic;
 
 /**
  * <p>
- *  服务类
+ * 服务类
  * </p>
  *
- * @author F*wt
- * @since 2020-04-21
+ * @Author fwt
+ * @since 2020-04-22
  */
 public interface SongListMusicService extends IService<SongListMusic> {
 

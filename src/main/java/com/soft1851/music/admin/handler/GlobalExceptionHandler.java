@@ -12,10 +12,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import java.io.IOException;
+
 /**
  * @ClassName GlobalExceptionHandler
  * @Description 全局统一异常处理
- * @Author mq_xu
+ *@Author fwt
  * @Date 2020/4/15
  * @Version 1.0
  */
@@ -75,4 +77,16 @@ public class GlobalExceptionHandler {
         return ResponseResult.failure(ResultCode.RESULT_CODE_DATA_NONE);
     }
 
+    /**
+     * IO异常的处理
+     *
+     * @param exception
+     * @return ResponseResult
+     */
+    @ExceptionHandler(value = {IOException.class})
+    @ResponseBody
+    public ResponseResult sendError(IOException exception) {
+        log.error(exception.getMessage());
+        return ResponseResult.failure(ResultCode.CAPTCHA_ERROR);
+    }
 }

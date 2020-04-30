@@ -13,7 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * @ClassName MySqlGenerator
  * @Description 代码生成器
- * @Author mq_xu
+ * @author fwt
  * @Date 2020/4/16
  * @Version 1.0
  */
@@ -77,9 +77,9 @@ public class MySqlGenerator {
         DataSourceConfig dataSourceConfig = new DataSourceConfig();
         dataSourceConfig.setDbType(DbType.MYSQL)
                 .setDriverName("com.mysql.jdbc.Driver")
-                .setUrl("jdbc:mysql://rm-m5ee476bu350735gjeo.mysql.rds.aliyuncs.com:3306/cloud_music?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai")
+                .setUrl("jdbc:mysql://localhost:3306/cloud_music?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai")
                 .setUsername("root")
-                .setPassword("XuNiit_#");
+                .setPassword("root");
 
         AutoGenerator autoGenerator = new AutoGenerator();
         autoGenerator.setGlobalConfig(config)

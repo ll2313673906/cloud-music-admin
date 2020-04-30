@@ -1,10 +1,8 @@
 package com.soft1851.music.admin.util;
 
-
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.util.Base64;
-
 /**
  * @author taoranran
  */

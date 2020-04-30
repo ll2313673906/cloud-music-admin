@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
 /**
- * @author mq_xu
+ * @Author fwt
  * @description 全局统一响应处理
  * @create 2020/2/5
  */
